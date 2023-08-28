@@ -4,37 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Login & Register Form</title>
+    <title>Website with Login & Registration</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
-    
     <header class="header">
-        <a href="#" class="logo">Logo</a>
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
-            <button class="btnLogin-popup">Login</button>
         </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass-dollar"></i></button>
+        </form>
     </header>
+
     <section class="section">
-        <div class="wrapper">
-            <span class="icon-close">
-                <i class='bx bx-x'></i>
-            </span>
+        <div class="background"></div>
+        <div class="container">
+            <div class="content">
+                <h2 class="logo"><i class='bx bxl-firebase'></i>Logo</h2>
+                <div class="text-sci">
+                    <h2>Welcome! <br><span>To Our New Website.</span></h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, magnam!</p>
+
+
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    </div>
+                    
+                </div>
+            </div>
 
             <div class="logreg-box">
-                <!-- form login -->
                 <div class="form-box login">
-                    <div class="logreg-title">
-                        <h2>Login</h2>
-                        <p>Please login to use the platform</p>
-                    </div>
-
                     <form action="#">
+                        <h2>Sign In</h2>
+
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-envelope'></i></span>
                             <input type="email" required>
@@ -48,33 +63,26 @@
                         </div>
 
                         <div class="remember-forgot">
-                            <label><input type="checkbox">Remember me</label>
-                            <a href="#">Forgot password</a>
+                            <label><input type="checkbox"> Remember me</label>
+                            <a href="#">Forgot password?</a>
                         </div>
 
-                        <button type="submit" class="btn">Login</button>
+                        <button type="submit" class="btn">Sign In</button>
 
-                        <div class="logreg-link">
-                            <p>Don't have an account?
-                                <a href="#" class="register-link">Register</a>
-                            </p>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Sign up</a></p>
                         </div>
                     </form>
-
                 </div>
 
-                <!-- form register -->
                 <div class="form-box register">
-                    <div class="logreg-title">
-                        <h2>Registration</h2>
-                        <p>Please provide the following to verify your identity</p>
-                    </div>
-
                     <form action="#">
+                        <h2>Sign Up</h2>
+
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-user'></i></span>
                             <input type="text" required>
-                            <label>Full Name</label>
+                            <label>Name</label>
                         </div>
 
                         <div class="input-box">
@@ -90,35 +98,21 @@
                         </div>
 
                         <div class="remember-forgot">
-                            <label><input type="checkbox">I agree to the terms & conditions</label>
+                            <label><input type="checkbox"> I agree to the terms & conditions</label>
                         </div>
 
-                        <button type="submit" class="btn">Register</button>
+                        <button type="submit" class="btn">Sign Up</button>
 
-                        <div class="logreg-link">
-                            <p> Already have an account?
-                                <a href="#" class="login-link">Login</a>
-                            </p>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link">Sign in</a></p>
                         </div>
                     </form>
-
                 </div>
-            </div> 
-
-            <div class="media-options">
-                <a href="#">
-                    <i class='bx bxl-google'></i>
-                    <span>Login with Google</span>
-                </a>
-                <a href="#">
-                    <i class='bx bxl-facebook-circle'></i>
-                    <span>Login with Facebook</span>
-                </a>
             </div>
         </div>
-    </section>       
-
+    </section>    
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8a7ac63583.js" crossorigin="anonymous"></script>
 </body>
 </html>
